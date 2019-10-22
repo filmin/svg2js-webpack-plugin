@@ -3,7 +3,7 @@ A webpack plugin to import SVG images from JS
 
 ## Installation
 ```
-npm i --save-dev svg2js-webpack-plugin
+npm i --save-dev git+https://git@github.com/filmin/svg2js-webpack-plugin.git
 ```
 
 ## Usage
