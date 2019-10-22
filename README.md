@@ -8,9 +8,9 @@ npm i --save-dev svg2js-webpack-plugin
 
 ## Usage
 All you have to do is to add the plugin to your webpack.config.js:
-```
+```js
 const SVG2JS = require('svg2js-webpack-plugin');
-...
+
 new SVGToJS({
     src: 'resources/assets/svg',
     dest: 'resources/assets/js/svg.js',
@@ -20,7 +20,7 @@ new SVGToJS({
 })
 ```
 In your js files
-```
+```js
 // import the generated file
 import {svg, collection} from './svg';
 
