@@ -37,4 +37,5 @@ var allSVGImages = collection;
 - Allow nested folders in `src`
 
 
+## References
 Inspired by https://github.com/douglasdc3/laravel-mix-svg
