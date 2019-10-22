@@ -35,3 +35,6 @@ var allSVGImages = collection;
 ## TODO
 - Make it available in npmjs.org
 - Allow nested folders in `src`
+
+
+Inspired by https://github.com/douglasdc3/laravel-mix-svg
