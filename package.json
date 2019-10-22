@@ -1,0 +1,22 @@
+{
+  "name": "svg2js-webpack-plugin",
+  "version": "1.0.0",
+  "description": "A webpack plugin to import SVG images from JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filmin/svg2js-webpack-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filmin/svg2js-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/filmin/svg2js-webpack-plugin#readme",
+  "devDependencies": {
+    "run-plugin-webpack": "^1.0.0"
+  }
+}
