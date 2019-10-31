@@ -1,6 +1,6 @@
 {
   "name": "svg2js-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A webpack plugin to import SVG images from JS",
   "main": "index.js",
   "scripts": {
