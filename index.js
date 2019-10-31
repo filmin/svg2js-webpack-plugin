@@ -43,9 +43,9 @@ Plugin.prototype.main = function() {
 }
 
 let walker = function(dir, filelist = [], prefix = "") {
-  let files = fs.readdirSync(dir).filter(f => f.includes(".svg");
+  let files = fs.readdirSync(dir).filter(f => f.includes(".svg"));
   files.forEach(file => {
-   filelist.push(prefix + file);
+    filelist.push(prefix + file);
   });
   return filelist;
 }
