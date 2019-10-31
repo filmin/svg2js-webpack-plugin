@@ -27,13 +27,9 @@ Plugin.prototype.getOptions = function(options) {
 };
 
 Plugin.prototype.main = function() {
-  console.log(this.options.src);
   let icons = "";
-
   let path =this.options.src;
-
   let files = walker(path);
-
   files.forEach(file => {
     const iconName = file.replace(".svg", "");
     var icon = fs.readFileSync(path +'/'+ file) + "";
@@ -43,13 +39,11 @@ Plugin.prototype.main = function() {
     icon = icon.replace(/(version|class|width|height)="(.*?)"/igm, "");
     icons += `'${iconName}': \`${icon}\`,\n\r`;
   });
-
   writeJavascript(this.options.dest, icons);
 }
 
 let walker = function(dir, filelist = [], prefix = "") {
   let files = fs.readdirSync(dir);
-  //console.log(files);
   files.forEach(file => {
     if (fs.statSync(dir +'/'+ file).isDirectory()) {
       let folder = file + "/";
@@ -61,7 +55,6 @@ let walker = function(dir, filelist = [], prefix = "") {
       filelist.push(prefix + file);
     }
   });
-
   return filelist;
 }
 
